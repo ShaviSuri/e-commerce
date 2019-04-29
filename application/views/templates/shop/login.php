@@ -12,13 +12,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="loginmodal-container">
                 <h1><?= lang('login_to_acc') ?></h1><br>
                 <form method="POST" action="">
-                    <input type="text" name="email" placeholder="Email">
-                    <input type="password" name="pass" placeholder="Password">
+                    <input type="text" name="email" placeholder="Email" required>
+                    <input type="password" name="pass" placeholder="Password" required>
                     <input type="submit" name="login" class="login loginmodal-submit" value="<?= lang('login') ?>">
                 </form> 
-                <div class="login-help">
+                <div style="text-align:center" class="login-help">
                     <a href="<?= LANG_URL . '/register' ?>"><?= lang('register') ?></a>
                 </div>
+		
             </div>
         </div>
     </div>
